@@ -1,7 +1,8 @@
-import Tabs from "react-bootstrap/Tabs";
-import Tab from "react-bootstrap/Tab";
 import React from "react";
 import Board from './Board'
+import Tabs from "react-bootstrap/Tabs";
+import Tab from "react-bootstrap/Tab";
+
 
 
 function Tabulation (){
@@ -15,7 +16,7 @@ function Tabulation (){
             </Tab>
             <Tab eventKey="materials" title="Materials">
                 <p>some text</p>
-             </Tab>
+            </Tab>
             <Tab eventKey="finishes" title="Finishes">
                 <p>some text</p>
             </Tab>
