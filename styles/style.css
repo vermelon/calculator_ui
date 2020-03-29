@@ -1,0 +1,354 @@
+.page {
+    min-width: 1100px;
+      /* we don't know how to make mobile versions of websites yet, */
+      /* so here we've set a minimum page width */
+    max-width: 1600px;
+      /* here we've set a maximum page width */
+      margin: 0 auto;
+      /* this ensures that all content is centered on screens wider than 1600 */
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  .header {
+      height: 100vh;
+      min-height: 600px;
+      max-height: 756px;
+      background-color: #f2f2f2;
+      display: flex;
+      width: 100%;
+      position:relative;
+      /* parameters for the header section */
+  }
+  
+  .logo {
+      background-image:url(../images/logo.png);
+  }
+  .logo__place_header {
+    position: absolute;
+    background-size: 154px 31px;
+    height:31px;
+    width: 154px;
+    top: 31px;
+    left: 64px; 
+  }
+
+  .logo__place_footer {
+    flex-basis: 711px;
+    background-image:url(../images/logo_white.png);
+    background-size: 183px 35px;
+    height: 35px;
+    width: 183px; 
+    z-index: 1;
+}
+  
+  .header__title {
+      width: 730px;
+      margin: auto;
+      margin-left: 64px;
+      line-height:96px;
+      font-size:102px;
+      font-weight: bold;
+      z-index: 1;
+  }
+  
+  .header__subtitle {
+      width: 388px;
+      position: absolute;
+      bottom: 30px;
+      left: 64px;
+      line-height: 25px;
+      font-size:18px;
+      font-weight: normal;
+      margin: 0
+  }
+  
+  .header__link {
+      color: #2F80ED;
+  }
+  /* here we have two examples of selectors in order to remind you how to set styles for elements */
+  .header__square-pic{
+      height: 568px;
+      width: 568px;
+      background-color:  #2f80ed;
+      position:absolute;
+      right: 0;
+      top: 64px;
+  }
+  
+  .header__main-illustration {
+      width:765px;
+      height:608px;
+      position: absolute;
+      bottom:0;
+      right: 0;
+  }
+  
+  .description {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+  }
+
+  .two-columns {
+      display: flex;
+      flex-direction:row;
+      width:80%;
+      justify-content: space-between;
+  }
+
+  .two-columns__brief {
+      width: 175px;
+      color: #2f80ed;
+      line-height:1.2; 
+      font-size:18px;
+      font-weight: normal; 
+      margin:0;
+  }
+
+  .two-columns__main-text {
+      width: 80%;
+  }
+
+  .two-columns__paragraph {
+      min-width: 784px;
+      margin-bottom: 30px;
+      line-height: 34px;
+      font-size: 24px;
+      font-weight: normal; 
+      margin-top: 0;
+  }
+
+  .two-columns__paragraph:last-child {
+      margin-bottom: 0;
+  }
+
+  .two-columns__span-accent {
+      font-weight: bold;
+  }
+
+  .digits {
+      display:flex;
+      align-items: center;
+      flex-direction:column;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      position: relative;
+  }
+
+  .section-title {
+      width: 60%;
+      margin-top:100px;
+      display: flex;
+      justify-content: center;   
+      line-height: 69px;
+      font-size: 60px;
+      font-weight: bold;
+      margin:0; 
+  }
+
+  .section-subtitle {
+      width: 60%;
+      margin-top:20px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0;
+      line-height: 34px;
+      font-size: 24px;
+      font-weight: normal;
+  }
+
+  
+  .section-title_theme_dark {
+    width: 60%;
+    margin:90px 0 0 0;
+    color: white;
+    line-height: 69px; 
+    font-size:60px; 
+    font-weight: bold;
+    z-index: 1;
+}
+
+.section-subtitle_theme_dark {
+    width: 60%;
+    margin:20px 0 0 0;
+    color: white;
+    line-height: 34px; 
+    font-size:24px; 
+    font-weight: normal;
+    z-index: 1; 
+}
+
+  .table {
+    width: 1100px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+  .table__cell {
+      width: 250px;
+      margin-top: 60px;
+  }
+  
+  .table__heading {
+      line-height: 1.15;
+      font-size: 24px;
+      font-weight: bold;
+      margin:0;
+  }
+
+  .table__text {    
+      margin-top: 20px;
+      line-height: 1.2;
+      font-size: 18px;
+      font-weight: normal;
+      margin-bottom: 0;
+  }
+  
+/* including elements with key-value modifiers */
+  .table__cell_theme_dark {
+    width: 200px;
+    color: white;
+    margin-right: 0;
+    margin-top: 80px;
+  }
+  
+  .table_theme_dark {
+    text-align: left;
+    margin-bottom: 90px;
+    z-index: 1;
+  }
+
+  .feynman {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f2f2f2;
+      background-image: url(../images/feynman.png);
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      background-size: 867px 637px;
+      height: 790px;
+      position: relative;
+      padding-top: 100px;
+  }
+
+  .feynman__title {
+      display:flex;
+      width: 770px;
+      line-height: 1.15;
+      font-size: 120px;
+      font-weight: bold;
+      text-align: center;
+      margin:0;
+  }
+
+  .feynman__subtitle {
+      line-height:51px;
+      font-size: 36px;
+      font-weight: normal;
+      margin: 70px 0 0 0;
+  }
+
+  .feynman__link {
+      line-height:51px;
+      font-size: 36px;
+      font-weight: normal;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      text-decoration: none;
+      color: black;
+  }
+  
+  .kaufman {
+      background-color: #1f1f1f;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+  }
+
+  .kaufman__triangle {  
+      z-index: 0;
+      position: absolute;
+      right: -210px;
+      top: 0;
+      height: 877px;
+      width: 877px;
+  }
+  
+  .footer {
+      background-color: #1f1f1f;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      min-height: 350px;
+  }
+  
+  .footer__columns {
+      margin-top: 60px;
+      width: 90%;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .footer__column_content_copyright {
+      width: 50%;
+      justify-self: start;
+  }
+
+  .footer__column_content_info {
+      position: static;
+      margin-left: 200px;
+  }
+
+  .footer__column_content_social {
+      position: static;
+      margin-left: 100px;
+  }
+
+  .footer__author {
+      position: absolute;
+      left:0;
+      bottom: 20px;
+      line-height: 25px;
+      font-size: 18px;
+      font-weight: normal;
+      color: #4d4d4d;
+      margin: 0;
+  }
+  
+  .footer__column-heading {
+      line-height:45px;
+      font-size:18px;
+      font-weight: bold;
+      color: white; 
+      margin: 0;
+  }
+
+  .footer__column-links {
+      list-style-type: none;
+      padding: 0;
+      margin:20px 0 16px 0;
+  }
+
+  .footer__column-link {
+      text-decoration: none;
+      color: #4d4d4d;
+      line-height: 30px;
+      font-size: 18px;
+      font-weight: normal;
+  }
+
+  .footer__social-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+  }
