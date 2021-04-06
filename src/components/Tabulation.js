@@ -1,30 +1,38 @@
 import React from "react";
-import Board from './Board'
+import Boards from './Boards'
+import Woods from './Woods'
+import Materials from './Materials'
+import Finishes from './Finishes'
+import Products from './Products'
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 
 
 
-function Tabulation (){
+function Tabulation (props){
+
+const onTabClick = (eventKey) => {
+        props.onClick(eventKey)
+    } 
+
+
+
     return(
-        <Tabs defaultActiveKey="boards" id="uncontrolled-tab-example">
-            <Tab eventKey="boards" title="Boards">
-                <Board/>
+        <Tabs defaultActiveKey="boards" onSelect={onTabClick}>
+            <Tab eventKey="boards" title="Boards" >
+             <Boards boards = {props.boards} onDelete={props.onDelete}/>
             </Tab>
-            <Tab eventKey="woods" title="Woods">
-                <p>some text</p>
+            <Tab eventKey="wood" title="Wood">
+               <Woods woods = {props.woods} onDelete={props.onDelete}/>
             </Tab>
             <Tab eventKey="materials" title="Materials">
-                <p>some text</p>
+                <Materials materials = {props.materials} onDelete={props.onDelete}/>
             </Tab>
             <Tab eventKey="finishes" title="Finishes">
-                <p>some text</p>
+                <Finishes finishes = {props.finishes} onDelete={props.onDelete}/>
             </Tab>
             <Tab eventKey="products" title="Products">
-                <p>some text</p>
-            </Tab>
-            <Tab eventKey="projects" title="Projects">
-                <p>some text</p>
+                <Products products = {props.products} onDelete={props.onDelete}/>
             </Tab>
         </Tabs>
     )
